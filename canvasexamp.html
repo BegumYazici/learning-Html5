@@ -1,13 +1,12 @@
-<!DOCTYPE HTML>
-    <html>
-        <head>
-            <style>
-                #canv{
-                    border:1px solid red;
-                }
-            </style>
-        </head>
-        <body>
-            <canvas id="canv" width="150" height="100"></canvas>
-        </body>
-    </html>
+<canvas id="c"></canvas> 
+<script>
+    var canvas = document.getElementById("c"),
+    context = canvas.getContext("2d");
+    context.fillStyle = "yellow";
+    context.fillRect(25, 30, 350, 250);
+    context.strokeStyle = "#fa00ee";
+    context.lineWidth = 6;
+    context.lineCap = "round";
+    context.arc(40, 30, 40, 0, Math.PI, false);
+    context.stroke();
+</script>

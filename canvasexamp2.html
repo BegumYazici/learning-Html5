@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="ornek" width="200" height="200" >
+        </canvas>
+        <script>
+            var c=document.getElementById("ornek");
+            var context=c.getContext("2d");
+            context.moveTo(0,0);
+            context.lineTo(300,150);
+            context.strokeStyle = '#ee00ee'
+            context.lineWidth = 20;
+            context.stroke();
+            </script>
+    </body>
+</html>
